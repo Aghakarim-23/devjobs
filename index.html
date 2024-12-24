@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>devjobs</title>
+</head>
+<body class="bg-[#f2f2f2]">
+    <div id="container" class="max-w-screen-xl m-auto relative">
+        <header class="w-full bg-[url('img/header_background.png')] md:bg-[url('img/header_bg_responsive.png')] xl:bg-[url('img/header_bg_desktop.png')] md:bg-cover h-[175px] flex items-center justify-between px-[1.5rem]">
+            <div id="logo">
+                <a href="#">
+                    <img src="img/logo_devjobs.svg" alt="logo_image">
+                </a>
+            </div>
+            <div id="solorButtons" class="flex items-center gap-[1rem]">
+                <div id="light">
+                    <img src="img/lightBtn.svg" alt="lightBtn">
+                </div>
+                <div id="checkBoxBtn">
+                    <img src="img/radioBtn.png" alt="checkBoxBtn">
+                </div>
+                <div id="dark">
+                    <img src="img/darkBtn.svg" alt="darkBtn">
+                </div>
+            </div>
+        </header>
+        <!-- ! filter part --> 
+        <div id="filterPart" class="w-[85%] flex justify-between items-center h-[5rem] bg-[#ffffff] rounded-xl px-[1.5rem] absolute top-[8rem] left-1/2	transform -translate-x-1/2">
+            <div id="inp" class="w-[80%] flex h-full ">
+                <input type="text" class="w-[100%] h-[100%] outline-none" placeholder="Filter by title...">
+            </div>
+            <div class="flex items-center gap-[0.5rem]">
+                <div class="">
+                    <img src="img/filter.svg" class="cursor-pointer" alt="fiter">
+                </div>
+                <div class="">
+                    <img src="img/search.svg" class="cursor-pointer" alt="search">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
