@@ -29,10 +29,23 @@
         </header>
         <!-- ! filter part --> 
         <div id="filterPart" class="w-[85%] flex justify-between items-center h-[5rem] bg-[#ffffff] rounded-xl px-[1.5rem] absolute top-[8rem] left-1/2	transform -translate-x-1/2">
-            <div id="inp" class="w-[80%] flex h-full ">
+            <!-- 1 -->
+            <div id="inp" class="w-[80%] md:w-[30%] md:gap-[1rem] flex h-full md:border-r">
+                <img src="img/search_icon.svg" class="hidden md:flex w-[1.5rem] cursor-pointer" alt="searchIcon">
                 <input type="text" class="w-[100%] h-[100%] outline-none" placeholder="Filter by title...">
             </div>
-            <div class="flex items-center gap-[0.5rem]">
+            <!-- 2 -->
+            <div id="inp" class="w-[80%] hidden md:flex md:w-[30%] md:gap-[1rem] flex h-full md:border-r">
+                <img src="img/location_icon.svg" class="hidden md:flex w-[1.5rem] cursor-pointer" alt="locationIcon">
+                <input type="text" class="hidden md:flex w-[100%] h-[100%] outline-none" placeholder="Filter by location...">
+            </div>
+            <!-- 3 -->
+            <div id="inp" class="w-[80%] hidden md:flex md:w-[30%] md:gap-[0.2rem] flex md:justify-evenly h-full items-center">
+                <img src="img/checkBox-icon.svg" class="hidden md:flex w-[1.5rem] cursor-pointer" alt="checkBoxBtn">
+                <h3 class="hidden md:flex text-[1rem] font-bold ">Full Time</h3>
+                <img src="img/searcText.svg" class="hidden md:flex cursor-pointer" alt="">
+            </div>
+            <div class="flex items-center gap-[0.5rem] md:hidden">
                 <div class="">
                     <img src="img/filter.svg" class="cursor-pointer" alt="fiter">
                 </div>
